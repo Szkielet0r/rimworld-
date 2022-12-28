@@ -1,0 +1,25 @@
+Exception in RimWorld.FloatMenuMakerMap.ChoicesAtFor: System.NullReferenceException: Object reference not set to an instance of an object
+  at PorousBoat.FlexibleXenogerms.IdeoPatches.Postfix (RimWorld.Ideo __instance, System.Boolean& __result, Verse.Pawn pawn) [0x00052] in <01ec0d0cb0fb405bb4ba114adbaf6f6f>:0 
+  at RimWorld.Ideo.IsPreferredXenotype (Verse.Pawn pawn) [0x000cf] in <3126aca1aad041dcbdeda807cfe004bf>:0 
+     - postfix PorousBoat.FlexibleXenogerms: Void PorousBoat.FlexibleXenogerms.IdeoPatches:Postfix(Ideo __instance, Boolean& __result, Pawn pawn)
+     - postfix ChrisClark13.VeneratedXenotypeFlexibility: Boolean ChrisClark13.VeneratedXenotypeFlexibility.HarmonyPatches.VXF_IsPreferredXenotype:Postfix(Boolean result, Ideo __instance, Pawn pawn)
+  at RimWorld.CompAbilityEffect_ReimplantXenogerm.PawnIdeoCanAcceptReimplant (Verse.Pawn implanter, Verse.Pawn implantee) [0x0005c] in <3126aca1aad041dcbdeda807cfe004bf>:0 
+  at RimWorld.FloatMenuMakerMap.AddHumanlikeOrders (UnityEngine.Vector3 clickPos, Verse.Pawn pawn, System.Collections.Generic.List`1[T] opts) [0x03480] in <3126aca1aad041dcbdeda807cfe004bf>:0 
+     - transpiler Telardo.RomanceOnTheRim: IEnumerable`1 RomanceOnTheRim.HarmonyPatch_FloatMenuMakerMap:FloatMenuMakerMapTranspiler(IEnumerable`1 instructions)
+     - prefix Harmony_PrisonLabor: Void PrisonLabor.HarmonyPatches.Triggers+AddHumanlikeOrders:Prefix(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - prefix com.HemogenExtractor.rimworld.mod: Boolean HemogenExtractor.HemogenExtractorPatches:Prefix_AddHumanlikeOrders(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix GeologicalLandforms.Main: Void GeologicalLandforms.Patches.Patch_RimWorld_RCellFinder:FloatMenuMakerMap_AddHumanlikeOrders(Vector3& clickPos, Pawn& pawn, List`1& opts)
+     - postfix OskarPotocki.VFECore: Void VFECore.Patch_FloatMenuMakerMap+AddHumanlikeOrders_Fix:Postfix(Vector3 clickPos, Pawn pawn, List`1& opts)
+     - postfix PeteTimesSix.SimpleSidearms: Void PeteTimesSix.SimpleSidearms.Intercepts.FloatMenuMakerMap_AddHumanLikeOrders_Postfix:AddHumanlikeOrders(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix VanillaExpanded.VFEA: Void VFEAncients.HarmonyPatches.BuildingPatches:AddCarryJobs(List`1 opts, Vector3 clickPos, Pawn pawn)
+     - postfix OskarPotocki.HeavyWeapons: Void HeavyWeapons.Patch_FloatMenuMakerMap+AddHumanlikeOrders_Fix:Postfix(Vector3 clickPos, Pawn pawn, List`1& opts)
+     - postfix OskarPotocki.VanillaPsycastsExpanded: Void VanillaPsycastsExpanded.Technomancer.Psyring:EquipConditions(Vector3 clickPos, Pawn pawn, List`1& opts)
+     - postfix com.alphamemes: Void AlphaMemes.AlphaMemes_FloatMenuMakerMap_AddHumanlikeOrders_Patch:AddDragRelicToAltar(Vector3 clickPos, Pawn pawn, List`1& opts)
+     - postfix Harmony_PrisonLabor: Void PrisonLabor.HarmonyPatches.Patches_TakeToBed.Patch_AddTakeToBed:Postfix(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix Harmony_PrisonLabor: Void PrisonLabor.HarmonyPatches.Patches_GUI.GUI_RMB.Patch_RMB_Chains:Postfix(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix Haecriver.InjuredCarry: Void InjuredCarry.Patches+FloatMenuMakerCarryAdder:AddFloatMenuOption(Vector3 clickPos, Pawn pawn, List`1 opts)
+     - postfix legodude17.mvcf: Void MVCF.Features.PatchSets.PatchSet_Brawlers:AddHumanlikeOrders_Postfix(List`1 opts, Vector3 clickPos, Pawn pawn)
+  at RimWorld.FloatMenuMakerMap.ChoicesAtFor (UnityEngine.Vector3 clickPos, Verse.Pawn pawn, System.Boolean suppressAutoTakeableGoto) [0x000db] in <3126aca1aad041dcbdeda807cfe004bf>:0 
+     - postfix OskarPotocki.VFECore: Void VFE.Mechanoids.HarmonyPatches.FloatMenuMakerMap_ChoicesAtFor_Patch:Postfix(List`1& __result, Vector3 clickPos, Pawn pawn, Boolean suppressAutoTakeableGoto)
+     - postfix net.pardeike.rimworld.mods.achtung: Void AchtungMod.FloatMenuMakerMap_ChoicesAtFor_Postfix:Postfix(List`1 __result, Vector3 clickPos, Pawn pawn)
+     - finalizer net.pardeike.rimworld.mods.achtung: Exception AchtungMod.FloatMenuMakerMap_ChoicesAtFor_Finalizer:Finalizer(Exception __exception, List`1& __result)
